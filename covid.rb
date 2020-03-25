@@ -5,7 +5,7 @@ r0 = 2.7
 population = 7_500_000_000
 day = 1
 
-# Optimistic (based on diamond | total 5000 | infected 712 | deaths 10)
+# Optimistic (based on diamond | total around 5000 | infected 712 | deaths 10)
 max_infected = (0.14*population).round
 
 # Prevision
@@ -28,7 +28,7 @@ loop do
 
   infected = deaths * 50
 
-  puts "Jour #{day} | Infecté #{infected} | Morts #{deaths}"
+  puts "Day #{day} | Infected #{infected} | Deaths #{deaths}"
   day += 1
 end
 
